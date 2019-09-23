@@ -76,7 +76,7 @@
   <div class="row">
     <div id="textid" class="col-sm-12">
       <center><h1>Visual Understanding</h1></center>
-      <h3>Overview of the research field(待输入，下面这张图也要修改，不全面)</h3>
+      <h3>Overview of the research field</h3>
       
       <p>
         
@@ -93,7 +93,7 @@
   <li>Ad Hoc Web Image Semantic Understanding with Limited Supervision, NSFC General Program, PI</li>
 </ul> -->
 
-<h3 id="work">Part of our achievement(这边后面还需要补充内容)</h3>
+<h3 id="work">Part of our achievement</h3>
 <p><b> 1. Image retrival </b></p>
 Our research interests are in image retrieval, hashing and vector quantization. 
 <p><center><img src="https://i.loli.net/2019/09/22/jST1hmMRCquo9Vs.png" alt="" style="width: 600px;  border: 10px" /></center></p>
@@ -135,25 +135,17 @@ appealing performance of the proposed methods by comparing
 with the state-of-the-art methods. </p>
 
 
-
-
-
   <p><b> 3. Visual Question Answering </b></p>
 
-<!--   <p>VQA is a task that given a picture or video and a corresponding natural language question, model can generate the answer automatically. It is a multi-media task which combines the technique of Natural Language Processing(NLP) and Computer Vision(CV). It has received much attention from researchers and scholars in recent years. Solving this task is a crucial step towards Artificial Intelligence.</p>
-
-  <p><img src="https://tjumm.github.io/images/respic/qa.jpg" alt="" style="width: 300px; float: left; border: 10px" /></p>
-
-  <p>VQA can be divided into two categories in terms of the visual content: Image Question Answering(ImageQA) and Video Question Answering(VideoQA). As the natural extension of images, videos contain richer information with additional temporal and dynamic characteristics, which brings up more challenges and difficulties. The main aspect that our lab focuses on is how to combine the reasoning and knowledge to solve the VideoQA. When answering the complex question, human usually reason about the visual and language or combine the additional knowledge. So if we can let models to achieve such abilities, they will more intelligent.</p>
-
-  <p>The existing achievements of this topic of our lab include:
-    <i>“Movie Question Answering: Remembering the Textual Cues for Layered Visual Contents” (AAAI).</i>This work contributes a Layered Memory Network (LMN) to solve the MovieQA, which represents frame-level and clip-level movie content by the Static Word Memory module and the Dynamic Subtitle Memory module, respectively.
-    <i>“Explore Multi-step Reasoning in Video Question Answering” (ACMMM). </i>This work explores multi-step reasoning in VideoQA by formulating it as a new task, which targets to answer compositional logical structured questions bases on videos. The work contributes in developing a system to automatically generate a large-scale VideoQA dataset and proposing a novel model which combines spatial and temporal attention to address this task.</p>
- -->
+<p>Visual Question Answering is that given an image or a video and a related question, the proposed algorithm can answer the question correctly based on the visual information. Most existing methods are mainly based on recurrent neural networks (RNNs) with attention. But they are time-consuming and having difficulties in modeling long range dependencies due to the sequential nature of RNNs. </p>
+<p><center><img src="vqa.jpg" alt="" style="width:600px; border: 10px" /></center></p>
+<p>To tackle this issue, we propose a new architecture, Positional Self-Attention with Co-Attention (PSAC), which does not require RNNs for video question answering. The proposed Positional Self-Attention Block can calculate the response at each position by attending to all positions within the same sequence and then add representations of absolute positions. Therefore, PSAC can exploit the global dependencies of question and temporal information in the video and make the process of question and video encoding executed in parallel.</p>
+This <a href="http://staff.ustc.edu.cn/~hexn/papers/aaai19-VideoQA.pdf"> paper</a> is accepted as an oral paper by AAAI-2019.
 
 
 
-<h3 id="work">Exploring(需要补充吗?)</h3>
+
+<h3 id="work">Exploring</h3>
     <p><b> 1. Video object segmentation</b></p>
 
     <p>
