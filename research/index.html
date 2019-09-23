@@ -57,7 +57,7 @@
     <span class="icon-bar"></span>
     </button>
   
-    <a class="navbar-brand" href="../index.html">Center of Future Media, UESTC</a>
+    <a class="navbar-brand" href="../index.html">Center for Future Media, UESTC</a>
   </div>
   <div class="collapse navbar-collapse" id="navbar-collapse-1">
     <ul class="nav navbar-nav navbar-right">
@@ -102,13 +102,45 @@ Other works:
 <li>Deep Progressive Quantization (accepted in IJCAI-19): <a href="https://www.ijcai.org/proceedings/2019/102">[Paper link]</a>. <a href="https://github.com/cfm-uestc/DPQ">[Source code]</a>.</li>
 
 <p><b> 2. Face Aging </b></p>
-<!-- <p><img src="face.png" alt="" style="width: 350px; float: right; border: 10px" /></p> -->
-<p><center><img src="face.png" width="70%"/></center></p>
+<p>Face aging and rejuvenation aims to predict the
+face of a person at different ages. While tremendous progresses
+have been made in this topic, there are two central problems
+remaining largely unsolved:<li>the majority of prior works
+require sequential training data, which is very rare in real
+scenarios;</li> <li> how to simultaneously render aging face and
+preserve personality.</li></p>
+<p><center><img src="face.png" alt = "" style = "width:500px;  float: left;"/></center></p>
+<p>To tackle these issues, we
+develop a novel dual conditional GANs (AgeGAN) mechanism,
+which enables face aging and rejuvenation to be trained from
+multiple sets of unlabeled face images with different ages. In
+our architecture, the primal conditional GAN transforms a face
+image to other ages based on the age condition, while the
+dual conditional GAN learns to invert the task. Hence a loss
+function that accounts for the reconstruction error of images can
+preserve the personal identity, while the discriminators on the
+generated images learn the transition patterns (e.g., the shape and
+texture changes between age groups) and guide the generation
+of age-specific photo-realistic faces. </p>
+
+<p>We further improve our
+networks, termed AgeGAN++, in which we share the weights
+between the primal part and the dual part to ensure a more
+stable training process. Moreover, in order to get more sensible
+results, a representation disentanglement component is integrated
+with the latent facial representation, and a novel enhanced
+discriminator is applied on the generated images of AgeGAN++.
+Experimental results on two public datasets demonstrate the
+appealing performance of the proposed methods by comparing
+with the state-of-the-art methods. </p>
 
 
-  <p><b> 3. Visual Question Answering(这是模板 不是我写的) </b></p>
 
-  <p>VQA is a task that given a picture or video and a corresponding natural language question, model can generate the answer automatically. It is a multi-media task which combines the technique of Natural Language Processing(NLP) and Computer Vision(CV). It has received much attention from researchers and scholars in recent years. Solving this task is a crucial step towards Artificial Intelligence.</p>
+
+
+  <p><b> 3. Visual Question Answering </b></p>
+
+<!--   <p>VQA is a task that given a picture or video and a corresponding natural language question, model can generate the answer automatically. It is a multi-media task which combines the technique of Natural Language Processing(NLP) and Computer Vision(CV). It has received much attention from researchers and scholars in recent years. Solving this task is a crucial step towards Artificial Intelligence.</p>
 
   <p><img src="https://tjumm.github.io/images/respic/qa.jpg" alt="" style="width: 300px; float: left; border: 10px" /></p>
 
@@ -117,12 +149,18 @@ Other works:
   <p>The existing achievements of this topic of our lab include:
     <i>“Movie Question Answering: Remembering the Textual Cues for Layered Visual Contents” (AAAI).</i>This work contributes a Layered Memory Network (LMN) to solve the MovieQA, which represents frame-level and clip-level movie content by the Static Word Memory module and the Dynamic Subtitle Memory module, respectively.
     <i>“Explore Multi-step Reasoning in Video Question Answering” (ACMMM). </i>This work explores multi-step reasoning in VideoQA by formulating it as a new task, which targets to answer compositional logical structured questions bases on videos. The work contributes in developing a system to automatically generate a large-scale VideoQA dataset and proposing a novel model which combines spatial and temporal attention to address this task.</p>
-
+ -->
 
 
 
 <h3 id="work">Exploring(需要补充吗?)</h3>
     <p><b> 1. Video object segmentation</b></p>
+
+    <p>
+      Video Object Segmentation is a task that separating a foreground object from a video sequence. We focus on semi-supervised VOS in which the ground truth segmentation masks of one or multiple objects are given for the first frame in a video. VOS is a fundamental task
+in computer vision, with important applications including video editing, robotics, and self-driving cars. 
+    </p>
+            <p><img src="segmentation.jpg" alt="" style="width:600px; border: 10px" /></p>
     <p><b> 2. Visual-and-language Navigation </b></p>
     <p>    VLN requires an embodied agent to follow natural language instructions to navigate from a starting pose to a goal location in the Matterport3D Simulator(a new large-scale visual RL simulation environment).</p><br>
     <table border="0" align="center" cellpadding="0" cellspacing="0">
