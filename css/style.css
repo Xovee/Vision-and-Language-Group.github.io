@@ -1,203 +1,25 @@
-/*
- *	MyTemplate Custom Stylesheet
- */
 
-/**************************** 
- *	Header                  *
- ****************************/
-.container {
-  width: 95%; }
 
-.navbar {
-  min-height: 50px;
-  margin-bottom: 0px; }
+  .col-lg-2{
+    width:30%;
+  }
+  .col-lg-9{
+    width:70%;
+  }
 
-.navbar .nav > li {
-  position: relative;
-  display: block; }
 
-.navbar-default {
-  background-color: #256BB9; }
+  blockquote{
+    border-left: none;
+  }
 
-.navbar-default .navbar-toggle .icon-bar {
-  background-color: #efefef; }
-
-.navbar-default .navbar-toggle {
-  border-color: #efefef; }
-
-.navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus {
-  background-color: rgba(67, 137, 195, 0.9); }
-
-.navbar-default .navbar-brand a {
-  font-family: Trebuchet MS, snas-serif;
-  font-weight: bold;
-  color: #efefef;
-  line-height: normal;
-  text-decoration: none;
-  text-transform: uppercase; }
-
-.navbar-default .navbar-nav > li > a {
-  background-color: transparent; }
-
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-  color: #efefef;
-  background-color: #2374B7; }
-
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
-  color: #efefef;
-  background-color: #2374B7; }
-
-/* on click dropdown link set it style */
-.navbar-default .navbar-nav > .open > a,
-.navbar-default .navbar-nav > .open > a:focus,
-.navbar-default .navbar-nav > .open > a:hover {
-  color: #efefef;
-  background-color: #2374B7;
-  border-bottom: solid 2px transparent; }
-
-.dropdown-menu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 1000;
-  display: none;
-  float: left;
-  min-width: 160px;
-  padding: 10px 0;
-  margin: 2px 0 0;
-  list-style: none;
-  font-size: 14px;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 5px;
-  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-  background-clip: padding-box; }
-
-.navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #ABABAB;
-    width: 95%;}
-
-.navbar-default .navbar-nav > .open > .dropdown-menu li a:focus,
-.navbar-default .navbar-nav > .open > .dropdown-menu li a:hover {
-  color: #e7e7e7;
-  background-color: #256BB9; }
-
-/* top-nav-collapse collapse style */
-.top-nav-collapse {
-  min-height: 42px;
-  padding: 0; }
-
-.top-nav-collapse .navbar-toggle {
-  margin-top: 5px;
-  padding: 6px 6px;
-  margin-bottom: 6px; }
-
-.top-nav-collapse .navbar-brand {
-  padding: 10px 15px 0px 15px; }
-
-.navbar-default.top-nav-collapse .navbar-brand a {
-  font-size: 17px; }
-
-/****************************
- * Header banner			*
- ****************************/
-.banner {
+  #gridid img{
+    margin: 4px 0 0 0;
+    box-shadow: none;
+    display: block;
     width: 100%;
-    height: 310px !important;
-    padding: 4% 0 0 0;
-    position: relative;
-    background: rgba(67, 137, 195, 0.9);
-    background-size: 100% 100%;}
-
-.banner .slogan {
-  top: 0px;
-  text-align: center; }
-
-.banner .btn-circle-scroll {
-  text-align: center; }
-
-.banner .slogan h2 {
-  font-family: Trebuchet MS, snas-serif;
-  color: #fff;
-  text-shadow: none;
-  text-decoration: none;
-  text-transform: uppercase;
-  text-shadow: -1px 0 1px #000;
-  background-color: transparent;
-  border-width: 0px;
-  border-color: #000;
-  border-style: none; }
-
-.banner .slogan h2 {
-    font-size: 63px;
-    line-height: 60px;
-    font-weight: 700;}
-
-.banner .slogan h4 {
-  color: #f7f7f7;
-  margin-bottom: 30px;
-  font-weight: 600;
-  text-shadow: 0px 1px 1px #000; }
-
-.banner .slogan h4 {
-    font-size: 20px; }
-
-/****************************
- * Footer					*
- ****************************/
-footer {
-  text-align: center;
-  padding: 50px 0;
-  background-color: rgba(67, 137, 195, 0.9); }
-
-footer p {
-  color: #f8f8f8; }
-
-.btn-circle-scroll {
-  margin-bottom: 30px !important; }
-
-.btn-circle {
-  width: 70px;
-  height: 70px;
-  margin-top: 15px;
-  padding: 5px 16px;
-  border: 2px solid #256BB9;
-  border-radius: 25%;
-  font-size: 40px;
-  color: #fff;
-  background: 0 0;
-  -webkit-transition: background .3s ease-in-out;
-  -moz-transition: background .3s ease-in-out;
-  transition: background .3s ease-in-out;
-  -webkit-box-shadow: -1px 1px 1px rgba(255, 253, 223, 0.4);
-  box-shadow: -1px 1px 1px rgba(255, 253, 223, 0.4); }
-
-.btn-circle:hover, .btn-circle:focus {
-  outline: 0;
-  color: #fff;
-  background: rgba(255, 255, 255, 0.1); }
-
-.btn-circle-scroll .btn-circle i.animated {
-  -webkit-transition-property: -webkit-transform;
-  -webkit-transition-duration: 1s;
-  -moz-transition-property: -moz-transform;
-  -moz-transition-duration: 1s; }
-
-.btn-circle-scroll .btn-circle:hover i.animated {
-  -webkit-animation-name: pulse;
-  -webkit-animation-duration: 1.5s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-  -moz-animation-name: pulse;
-  -moz-animation-duration: 1.5s;
-  -moz-animation-iteration-count: infinite;
-  -moz-animation-timing-function: linear; }
+    height: auto;
+    max-height: 180px;
+  }
 
 /****************************
  * Sections     			*
