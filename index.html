@@ -171,7 +171,9 @@
       </div>
     </a>
   </div>
-
+  <div class="slider-progress">
+    <div class="progress"></div>
+  </div>
   <div class="container-fluid">
     <div class="row join">
       <div id="homeid" class="col-sm-8">
@@ -212,7 +214,8 @@
           <h4>News</h4>
           <ol>
             <li>
-              <span class="text-primary">September 26, 2019</span><img src="images/assests/new.png" width="20%"></img><br/>
+              <span class="text-primary">September 26, 2019</span><img src="images/assests/new.png"
+                width="20%"></img><br />
               <a href="http://cfm.uestc.edu.cn/NewsInformation/newsDetails/498894"><img
                   src="images/highlights/2019-9-26.png" style=" width:200px"></a>
               <strong>Only 10! Associate professor Gao won alibaba "DAMO ACADEMY Young Fellow Awards"</strong>
@@ -252,8 +255,14 @@
   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript">
     $(document).ready(function () {
-      p = $('.slideshow').find('.slide-blk').outerWidth() / 2;
-      $('.slideshow').slick({
+      var time = 7.68;
+      var $bar,
+        $slick,
+        isPause,
+        tick,
+        percentTime;
+      $slick = $('.slideshow')
+      $slick.slick({
         infinite: true,
         centerMode: true,
         centerPadding: '20vw',
@@ -261,9 +270,9 @@
         lazyLoad: 'ondemand',
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 7680,
+        autoplaySpeed: time * 1000,
         arrows: false,
-        dots: true,
+        dots: false,
         adaptiveHeight: false,
         responsive: [
           {
@@ -286,6 +295,49 @@
           }
         ]
       });
+
+
+      $bar = $('.slider-progress .progress');
+
+      $('.slideshow').on({
+        mouseenter: function () {
+          isPause = true;
+        },
+        mouseleave: function () {
+          isPause = false;
+        }
+      })
+
+      function startProgressbar() {
+        resetProgressbar();
+        percentTime = 0;
+        isPause = false;
+        tick = setInterval(interval, 10);
+      }
+
+      function interval() {
+        if (isPause === false) {
+          percentTime += 1 / (time + 0.1);
+          $bar.css({
+            width: percentTime + "%"
+          });
+          if (percentTime >= 100) {
+            $slick.slick('slickNext');
+            startProgressbar();
+          }
+        }
+      }
+
+
+      function resetProgressbar() {
+        $bar.css({
+          width: 0 + '%'
+        });
+        clearTimeout(tick);
+      }
+
+      startProgressbar();
+
     });
   </script>
 </body>

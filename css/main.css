@@ -840,6 +840,22 @@ body {
     padding-right: 26px
 }
 
+
+/* progress bar */
+.slider-progress {
+    width: 100%;
+    margin: 0 auto 24px auto;
+    height: 8px;
+    background: #eee;
+    border-radius: 0;
+  }
+  .slider-progress .progress {
+    width: 0%;
+    height: 8px;
+    background: #000;
+    border-radius: 0;
+  }
+
 .slide-img {
     width: auto;
     display: block;
@@ -859,10 +875,11 @@ body {
 .slide-blk {
     width: 100%;
     height: 100%;
+    border-right: 1px solid #fff;
 }
 
 .slide-container {
-    height: 20vw;
+    height: 25vw;
 }
 
 .slideshow {
@@ -877,8 +894,8 @@ body {
     width: 100%;
     margin: -172px 0 0 0;
     padding: 0;
-    background: rgb(255, 255, 255);
-    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0) 100%);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.75) 50%, rgba(0, 0, 0, 0) 100%);
     height: 180px;
 }
 
@@ -892,16 +909,20 @@ body {
 
 .slide-desc h3 {
     font-size: 16pt;
+    font-weight: bold;
     display: inline-block;
+    color: white;
 }
 
 .slide-desc p {
     font-size: 13pt;
     display: inline-block;
+    color: white;
 }
 
 .slide-hero {
     margin: auto;
+    padding: 0 5%;
     max-width: 100%;
 }
 
@@ -944,7 +965,7 @@ body {
 }
 
 .slide-container {
-  height: 30vw;
+  height: 20vw;
 }
 .slide-img {
   width: auto;
@@ -1077,3 +1098,4 @@ body {
     left: 0;
     right: 0
 }
+
