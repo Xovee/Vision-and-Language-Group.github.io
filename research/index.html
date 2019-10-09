@@ -15,6 +15,21 @@
 
 </head>
 
+<style>
+  h3 {
+    counter-reset: paper;
+  }
+
+  h4::before {
+    counter-increment: paper;
+    content: counter(paper)". ";
+  }
+
+  h4 {
+    font-weight: bold;
+  }
+</style>
+
 
 <body>
 
@@ -54,14 +69,14 @@
 
         <h3 id="work">Parts of our achievements</h3>
 
-        <p><b> 1. Visual Question Answering </b></p>
+        <h4>Visual Question Answering </h4>
 
         <p>Visual Question Answering is that given an image or a video and a related question, the proposed algorithm
           can answer the question correctly based on the visual information. Most existing methods are mainly based on
           recurrent neural networks (RNNs) with attention. But they are time-consuming and having difficulties in
           modeling long range dependencies due to the sequential nature of RNNs. </p>
         <p>
-          <img src="../images/research/vqa.png"/>
+          <img src="../images/research/vqa.png" />
         </p>
         <p>To tackle this issue, we propose a new architecture, Positional Self-Attention with Co-Attention (PSAC),
           which does not require RNNs for video question answering. The proposed Positional Self-Attention Block can
@@ -72,7 +87,7 @@
         This <a href="http://staff.ustc.edu.cn/~hexn/papers/aaai19-VideoQA.pdf"> paper</a> is accepted as an oral paper
         by AAAI-2019.
 
-        <p><b> 2. Face Aging </b></p>
+        <h4> Face Aging </h4>
         <p>Face aging and rejuvenation aims to predict the
           face of a person at different ages. While tremendous progresses
           have been made in this topic, there are two central problems
@@ -83,7 +98,7 @@
             preserve personality.</li>
         </p>
         <p>
-          <img src="../images/research/face.png"/>
+          <img src="../images/research/face.png" />
         </p>
         <p>To tackle these issues, we
           develop a novel dual conditional GANs (AgeGAN) mechanism,
@@ -110,10 +125,10 @@
           with the state-of-the-art methods. </p>
 
 
-        <p><b> 3. Image retrival </b></p>
+        <h4> Image retrival </h4>
         Our research interests are in hashing and quantization methods for fast image retrieval.
         <p>
-          <img src="https://i.loli.net/2019/09/22/jST1hmMRCquo9Vs.png"/>
+          <img src="https://i.loli.net/2019/09/22/jST1hmMRCquo9Vs.png" />
         </p>
         <p>The figure shows our Deep Recurrent Quantization (DRQ) model which is trained once and can generate
           sequential binary codes. It is the first to combine recurrent network and quantization, which significantly
@@ -134,7 +149,7 @@
 
 
         <h3 id="work">Exploring</h3>
-        <p><b> 1. Video object segmentation</b></p>
+        <h4> Video object segmentation</h4>
 
         <p>
           Video Object Segmentation is a task that separating a foreground object from a video sequence. We focus on
@@ -143,9 +158,9 @@
           in computer vision, with important applications including video editing, robotics, and self-driving cars.
         </p>
         <p>
-          <img src="../images/research/segmentation.png"/>
+          <img src="../images/research/segmentation.png" />
         </p>
-        <p><b> 2. Visual-and-language Navigation </b></p>
+        <h4> Visual-and-language Navigation </h4>
         <p> VLN requires an embodied agent to follow natural language instructions to navigate from a starting pose to a
           goal location in the Matterport3D Simulator(a new large-scale visual RL simulation environment).</p><br>
         <table border="0" align="center" cellpadding="0" cellspacing="0">
@@ -158,7 +173,7 @@
               <img src="../images/research/VLN3.png" style="width: 300px;  border: 10px" /></td>
           </tr>
         </table>
-        <p><b> 3. Adversarial Attack </b></p>
+        <h4> Adversarial Attack </h4>
         <p><img src="../images/research/FGSM.png" alt="" style="width: 450px; float: left; border: 10px" /></p>
         <p>Recent studies show that deep neural network are vulnerable to adversarial attacks in the form of subtle
           perturbations to inputs that lead a model to predict incorrect outputs. In the picture left, we can't see any
