@@ -1,7 +1,6 @@
 import os
 import cv2
 
-print('jj')
 
 def img_resize(root, shape):
 	for file in os.listdir(root):
