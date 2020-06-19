@@ -63,15 +63,17 @@
           <div class="col-sm-12 clearfix">
           	<center>
           		
-          	            <p><img src="../images/seminars/2020-7-nh.png" class="img-responsive" width="70%" /></p>
+          	            <p><img src="../images/seminars/2020-8-dy.png" class="img-responsive" width="70%" /></p>
           	</center>
 
-            <strong>Speaker:</strong> Hao Ni&emsp;[<a
-              href="https://pan.baidu.com/s/19W8P5X0LDxyPFvW8rxozIw">PPT (password: o9mi)</a>]<br>
-            <strong>Topic:</strong>Unsupervised Person Re-ID<br>
-            <strong>Date:</strong>June 12, 2020<br>
+            <strong>Speaker:</strong> Yan Dai&emsp;[<a
+              href="https://pan.baidu.com/s/18i5QRNPDvoO1waJzJo9HIw">PPT</a>(password: pkxb)<a
+              href="https://pan.baidu.com/s/1SGSXkV9vKlQfSjNjzDlwlw">Video</a>(password: z7np) ]<br>
+            <strong>Topic:</strong>Multi-person Pose Estimation<br>
+            <strong>Date:</strong>June 19, 2020<br>
             <strong>Abstract: </strong>
-            TPerson re-identification（Person Re-ID）refers to the cross-camera pedestrian retrieval task. Due to its important application in the field of video security, it has been extensively studied in recent years. With the development of deep learning, the performance of Person Re-ID has reached a very high level in public data set. However, most of the existing research focuses on the supervised Person Re-ID models. Due to the bad performance, unsupervised Pedestrian re-identification is still difficult to put into practical applications. 
+Despite of the recent great progress on multi-person pose estimation, existing solutions still undergo serious degradation under the condition of “crowded scenes”, where RGB images capture complex real-world scenes with highly overlapped people, severe occlusions, diverse postures and scale variations. In this work, we focus on two main problems: 1) how to remove the joints-of-interference from a given person proposal; and 2) how to infer the ambiguous joints. To tackle these problems, we propose a new pipeline named Relation based Pose Graph Network (RPGNet). Unlike existing works that directly predict joints-of-target by labeling joints-of-interference as false positive, we encourage all joints to be predicted and model their relation through a multi-joints relation parser (MRP) for joints-of-interference removal. This new pipeline will largely relieve the confusion of the joints estimation model when seeing identical joints with totally distinct labels(e.g., the identical hand exists in two bounding boxes). Furthermore, human beings can well estimate the joints with ambiguity by looking at the surrounding regions. For example, human can easily infer the location of ‘neck’ after seeing 
+‘head’ and ‘shoulder’. Inspired by this, we propose a joints refinement machine (JRM) with commonsense knowledge to refine pose estimation results for handling ambiguous joints. Extensive experiments on pose estimation benchmarks demonstrate that our method significantly outperforms existing state-of-the-art methods by a large margin. 
 
 
             </ul>
@@ -85,18 +87,39 @@
 
           <div class="col-sm-12 clearfix">
           	<center>
-              <p><img src="../images/seminars/2020-7-mlx.png" class="img-responsive" width="70%" /></p>        		
+              <p><img src="../images/seminars/2020-8-wxh.png" class="img-responsive" width="70%" /></p>        		
           	</center>
 
-            <strong>Speaker:</strong> Lanxin Miao&emsp;[<a
-              href="https://pan.baidu.com/s/1a6w0K4lN7isPHwckzVnz5w">PPT (password: msoi) </a>]<br>
-            <strong>Topic:</strong>Image-text matching<br>
-            <strong>Date:</strong>June 12, 2020<br>
+            <strong>Speaker:</strong> Xuanhan Wang&emsp;[<a
+              href="https://pan.baidu.com/s/1GmL9sOYaynDRKV_KJvTugg">PPT</a>(password: cq5y)<a
+              href="https://pan.baidu.com/s/1SGSXkV9vKlQfSjNjzDlwlw">Video</a>(password: z7np) ]<br>
+
+            <strong>Topic:</strong>基于人类常识的稠密姿态估计<br>
+            <strong>Date:</strong>June 19, 2020<br>
             <strong>Abstract: </strong>
-image-text matching Image-text matching has been a hot research topic bridging the vision and language areas. The major method is to map images and texts into the same semantic space in which they can be compared. However, there are still some challengs in this area. One is to measure the similarity between different modalities of data. Besdies, the current representation of image usually lacks global semantic concepts as in its corresponding text caption.  Moreover, although some models can achieve impressive caption quality, they still suffer from poor attention grounding. To address these issues, new models and methods were proposed. Three papers related to this area will be introduced in this presentation.
-Two parts are included in my report:<br>
-(1) Introduction of Image-Text Matching<br>
-(2) Three related papers
+In this presentation, we address the multi-person densepose estimation
+problem, which aims at learning dense correspondences between
+2D pixels of human body and 3D surface. It still poses several challenges
+due to real-world scenes with scale variations, occlusion
+and insufficient annotations. In particular, we address two main
+problems: 1) how to design a simple yet effective pipeline for densepose
+estimation; and 2) how to equip this pipeline with the ability
+of handing the issues of limited annotation and class-imbalanced
+labels. To tackle these problems, we develop a novel densepose
+estimation framework based on a two-stage pipeline, called Knowledge
+Transfer Network (KTN). Unlike existing works which directly
+propagate the pyramidal base features of regions, we enhance their
+representation power by a multi-instance decoder (MID). MID
+can well distinguish the target instance from other interference instances
+and background. Then, we introduce a knowledge transfer
+machine (KTM), which improves densepose estimation by
+utilizing the external commonsense knowledge. Notably, with the
+help of our knowledge transfer machine (KTM), current densepose
+estimation systems (either based on RCNN or fully-convolutional
+frameworks) can be improved in terms of the accuracy of human
+densepose estimation. Solid experiments on densepose estimation
+benchmarks demonstrate the superiority and generalizability of
+our approach.
 
 
 
@@ -107,34 +130,7 @@ Two parts are included in my report:<br>
 
 
 
-         <div class="row">
 
-          <!--TODO: 1: Add PPT link to all blocks, including img
-                    2: Add a script to calculate the ealier ppts-->
-
-          <div class="col-sm-12 clearfix">
-          	<center>
-              <p><img src="../images/seminars/2020-7-zzx.png" class="img-responsive" width="70%" /></p>        		
-          	</center>
-
-            <strong>Speaker:</strong> Zhixin Zhai&emsp;[<a
-              href="https://pan.baidu.com/s/1yR1Z7qcv8y002IuIiUXTSA">PPT (password: tv5w) </a>]<br>
-            <strong>Topic:</strong>Single Image Super-Resolution<br>
-            <strong>Date:</strong>June 12, 2020<br>
-            <strong>Abstract: </strong>
-Single Image Super-Resolution（SISR）has improved a lot since the neural networks were involved. A kind of structures and modules of the tasks have been proposed in the past fewer years, some of which have already been essential when we design a new SR network.
-In this report, I will briefly introduce the task, then list the basic architectures and modules via some representative works. Next, I will detailedly introduce three GAN-based SR algorithms, and finally conclude the future work for the task. Four parts could be included in my report:<br>
-(1) A brief overview about SISR.<br>
-(2) Introduce the supervised SISR task and SRGAN、ESRGAN, and conclude the basic architectures and modules.<br>
-(3) Introduce the blind SISR task and CinCGAN.<br>
-(4) Introduce the future work in SR task.
-
-
-
-
-            </ul>
-          </div>
-      </div>
 
 
 
