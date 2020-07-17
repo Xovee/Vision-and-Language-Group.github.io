@@ -1,3 +1,3 @@
-This is a host of github page: https://qilong-zhang.github.io/CFM-Lab.github.io/
+This is a host of github page: https://qilong-zhang.github.io/Vision-and-Language-Group.github.io/
 
-The homepage of CV@CFM
+The homepage of Vision and Language Group@CFM
