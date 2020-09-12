@@ -16,4 +16,4 @@ def img_resize(root, shape):
 			# cv2.imwrite('../' + , img)
 
 
-img_resize('./', (750, 450))
+img_resize('./', (1100, 600))
