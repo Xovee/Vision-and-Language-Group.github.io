@@ -1,5 +1,5 @@
 import os
-import cv2
+#import cv2
 from PIL import Image
 import matplotlib.pyplot as plt 
 
